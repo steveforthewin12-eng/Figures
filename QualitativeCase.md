@@ -1,3 +1,7 @@
+Figure "Stefaland_qualitative_analysis" shows qualitative streamflow analysis for four CAMELS-531 basins selected to represent distinct performance regimes under the predict-in-ungauged-regions (PUR) test. Each panel shows basin-mean daily precipitation (top, mm/day, inverted axis) and daily streamflow (bottom, mm/day) for the observed record (black), LSTM SL (dashed blue), and StefaLand ResConn (red). The ΔNSE reported in each panel reflects the difference in Nash-Sutcliffe Efficiency between StefaLand ResConn and the LSTM SL baseline.
+
+Figure "Stefaland_camels531_map" shows spatial distribution of ΔNSE (StefaLand ResConn minus LSTM SL) across 531 CAMELS basins under the regional generalization test (PUR). Warm colors indicate basins where LSTM SL outperforms StefaLand ResConn; cool colors indicate basins where StefaLand ResConn outperforms LSTM SL. Numbered stars correspond to the four case study basins shown in Figure "Stefaland_qualitative_analysis".
+
 Basin 407 (Pacific Northwest, ΔNSE = +0.187) illustrates StefaLand's clearest advantage. The LSTM systematically overestimates peak flows while StefaLand tracks both peak magnitude and recession dynamics closely, which we attribute to StefaLand's representation of antecedent soil moisture conditions that modulate catchment storage capacity.
 
 Basin 336 (California, ΔNSE = +0.060) shows that even where the LSTMbaseline is strong (NSE > 0.80), StefaLand provides consistent improvements in recession limb timing and low-flow representation.
