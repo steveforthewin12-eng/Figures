@@ -1,0 +1,7 @@
+Basin 407 (Pacific Northwest, ΔNSE = +0.187) illustrates StefaLand's clearest advantage. The LSTM systematically overestimates peak flows while StefaLand tracks both peak magnitude and recession dynamics closely, which we attribute to StefaLand's representation of antecedent soil moisture conditions that modulate catchment storage capacity.
+
+Basin 336 (California, ΔNSE = +0.060) shows that even where the LSTMbaseline is strong (NSE > 0.80), StefaLand provides consistent improvements in recession limb timing and low-flow representation.
+
+Basin 442 (Central US, ΔNSE = -0.001) is a deliberate parity case where both models produce nearly identical hydrographs, demonstrating that StefaLand does not degrade performance where local forcings are already sufficient predictors.
+
+Basin 430 (ΔNSE = -0.888) illustrates an important failure mode. StefaLand generates a large spurious peak around early 2005 with no observational basis, in a basin governed by highly local threshold-driven mechanisms where cross-basin representations introduce error rather than correct it. This is not an isolated case: as visible in the map, degraded performance clusters spatially in the western interior, suggesting a shared hydroclimatic regime where cross-basin signals are systematically counterproductive. We acknowledge this as a current limitation of the approach, and note that these degradations tend to concentrate in basins where even the LSTM struggles (NSE = 0.387), indicating that StefaLand can amplify rather than correct existing predictive difficulties in these regimes.”
